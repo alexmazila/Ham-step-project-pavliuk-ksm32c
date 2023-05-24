@@ -1,0 +1,389 @@
+@import "variables";
+body:before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 190,0.1);
+  z-index: 9999;
+  pointer-events: none;
+}
+.options4{
+  width: 100%;
+  height: 365px;
+  display: flex;
+  font-family: $FontMontBold;
+  font-weight: bold;
+  font-size: 20px;
+  .option_dark{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    gap: 40px;
+    background-color: #1c2a33;
+    color: $ColorYellowMain;
+    box-sizing: border-box;
+  }
+  .option_light{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    gap: 40px;
+    background-color: #18cfab;
+    color: white;
+  }
+  i{
+    font-size: 100px;
+  }
+  }
+.ourSer{
+  display: flex;
+  justify-content: center;
+  color: $ColorBrown;
+  font-family:$FontMontReg;
+  margin-top: 80px;
+  font-size: 36px;
+}
+.services{
+  width: 1140px;
+  margin: 100px auto 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .service{
+    border: 1px solid $ColorYellowMain;
+    width: 20%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $FontMontReg;
+    font-size: 16px;
+    color: $ColorBrown;
+  }
+  #ser1{
+    background-color: $ColorYellowMain;
+    color: white;
+  }
+  .service:hover{
+    cursor: pointer;
+    background-color: $ColorYellowMain;
+    color: white;
+  }
+}
+.description{
+  display: flex;
+  width: 1140px;
+  margin: 5px auto 100px auto;
+  padding-bottom: 105px;
+  align-items: center;
+  height: 206px;
+  img{
+    width: 190px;
+    height: auto;
+  }
+  .descText{
+    margin-left: 10px;
+  }
+}
+.section2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  height: 465px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),url("../images/Sections background/section-2.jpg");
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  .text1sec2{
+    font-family: $FontMontBold;
+    font-weight: bold;
+    font-size: 40px;
+    color: $ColorYellowMain;
+  }
+  .text2sec2{
+    font-family: $FontMontReg;
+    font-size: 16px;
+    color: $ColorYellowMain;
+  }
+  .buttonsec2{
+    font-family: $FontMontBold;
+    font-weight: bold;
+    font-size: 13px;
+    color: white;
+    height: 65px;
+    width: 160px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px -4px 0px rgba(255, 255, 255, 1);
+    margin-top: 40px;
+  }
+}
+.works{
+  width: 610px;
+  margin: 100px auto 70px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .work{
+    border: 1px solid $ColorYellowMain;
+    width: 20%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $FontMontReg;
+    font-size: 16px;
+    color: $ColorBrown;
+  }
+  #all{
+    box-shadow: 0px -2px 0px $ColorYellowMain;
+    color: $ColorYellowMain;
+  }
+  .work:hover{
+    cursor: pointer;
+    box-shadow: 0px -2px 0px $ColorYellowMain;
+    color: $ColorYellowMain;
+  }
+}
+.filteredPictures {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1160px;
+  margin: 100px auto 70px auto;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  .topCorner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 204px;
+    width: 284px;
+    box-shadow: 0px -2px 0px $ColorYellowMain;
+
+    .circles {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+
+      .circeFull {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: $ColorYellowMain;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 12px;
+      }
+
+      .circleEmpty {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid $ColorYellowMain;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $ColorYellowMain;
+        font-size: 12px;
+      }
+    }
+
+    a {
+      margin: 30px 0 10px 0;
+      font-family: $FontMontBold;
+      font-weight: bold;
+      font-size: 14px;
+      color: $ColorYellowMain;
+    }
+
+    p {
+      font-family: $FontMontReg;
+      font-size: 12px;
+      color: $ColorYellowMain;
+    }
+  }
+}
+.addMoreButton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .AddMore{
+    margin: 70px 0 0 0;
+    height: 65px;
+    width: 160px;
+    font-family: $FontMontBold;
+    font-weight: bold;
+    background-color: $ColorYellowMain;
+    color: white;
+    font-size: 15px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+  }
+  i{
+    font-size: 20px;
+    padding-right: 10px;
+  }
+}
+.news{
+  display: flex;
+  width: 1140px;
+  margin: 105px auto 130px auto;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  height: 600px;
+  gap: 25px;
+  .date{
+    width: 63px;
+    height: 63px;
+    background-color: $ColorYellowMain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+    margin-left: 200px;
+    text-align: center;
+    font-size: 16px;
+    font-family: $FontMontReg;
+    color: white;
+  }
+  .newsArticle{
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+    width: 262px;
+    height: 202px;
+    background-color: #f8fcfe;
+    .postName{
+      font-size: 18px;
+      font-family: $FontMontBold;
+      font-weight: bold;
+      color: $ColorYellowMain;
+      padding-left: 12px;
+      padding-top: 16px;
+      background-color: #cdecfb;
+    }
+    .author{
+      font-size: 14px;
+      font-family: $FontMontLight;
+      color: $ColorBrown;
+      padding: 16px 0 10px 14px;
+      background-color: #cdecfb;
+    }
+  }
+}
+.review{
+  height: 850px;
+  width: 100%;
+  margin-bottom: 100px;
+  background-image: linear-gradient(rgba(0, 0, 90, 0.6), rgba(0, 0, 90, 0.7)),url("../images/Sections background/section-3.jpg");
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .feedbackTitle{
+    padding: 100px 0 50px 0;
+    color: white;
+    font-family: $FontMontReg;
+    font-size: 36px;
+  }
+  .quoteSymb{
+    font-size: 40px;
+    padding: 0 0 50px 0;
+    color: $ColorYellowMain;
+  }
+  .quote{
+    text-align: center;
+    width: 1100px;
+    height: 140px;
+    padding-bottom: 20px;
+    font-size: 16px;
+    font-family: $FontMontLight;
+    color: $ColorYellowMain;
+  }
+  .authorQuote{
+    padding-bottom: 15px;
+    font-size: 16px;
+    font-family: $FontMontBold;
+    color: $ColorYellowMain;
+  }
+  .authorJob{
+    padding-bottom: 20px;
+    font-size: 13px;
+    font-family: $FontMontLight;
+    color: $ColorYellowMain;
+  }
+  .circle-container{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 3px solid $ColorYellowMain;
+    box-shadow: 0 0 0 12px rgba(78, 78, 78, 0.4);
+    overflow: hidden;
+    .authorPhoto{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .merry-go-round{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 40px 0 90px 0;
+    .arrow{
+      width: 29px;
+      height: 29px;
+      border: 1px solid $ColorYellowMain;
+      background-color: transparent;
+      color: $ColorYellowMain;
+      font-family: $FontMontBold;
+      font-weight: bold;
+    }
+    .arrow:hover{
+      background-color:$ColorYellowMain;
+      color: white;
+      cursor: pointer;
+    }
+    .circle-container-small{
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      box-shadow: 0 0 0 3px rgba(78, 78, 78, 0.4);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      .authorPhotoSmall{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .circle-container-small:hover{
+      cursor: pointer;
+    }
+  }
+
+
+}

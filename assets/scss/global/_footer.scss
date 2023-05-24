@@ -1,0 +1,16 @@
+@import "variables";
+.footer{
+  display: flex;
+  height: 110px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #22353f;
+  font-family: $FontMontLight;
+  font-size: 14px;
+  .copyright{
+    color: #5a656b;
+    display: flex;
+    gap: 5px;
+  }
+}
